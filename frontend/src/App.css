@@ -1,0 +1,11 @@
+.header{
+    width: 100vw;
+    height: 5vh;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.footer{
+    width: 100vw;
+    height: 5vh;  
+}
