@@ -1,11 +1,25 @@
-.header{
-    width: 100vw;
-    height: 5vh;
-    display:flex;
-    justify-content: space-between;
-    
+.header {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  background: #6e6363;
 }
-.footer{
-    width: 100vw;
-    height: 5vh;  
+.footer {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  background: #6e6363;
+}
+.title {
+  width: 100vw;
+  height: 8vh;
+  background: #e99191;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  width: 100vw;
+  text-align: center;
 }

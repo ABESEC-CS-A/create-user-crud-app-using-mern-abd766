@@ -17,7 +17,7 @@ function UserTable() {
   };
   return (
     <div className="content">
-      <h1>List of Users</h1>
+      <h1 className="title">List of Users</h1>
       <table className="table table-hover">
         <thead>
           <tr>
@@ -34,17 +34,19 @@ function UserTable() {
               <td colSpan={5}>{error}</td>
             </tr>
           )}
-          {users.map((user) => {
-            <tr>
-              <td>1</td>
-              <td>{user.email}</td>
-              <td>{user.name}</td>
-              <td>{user.role}</td>
-              <td>
-                <button className="btn btn-primary">Edit &nbsp;</button>
-                <button className="btn btn-danger">Delete</button>
-              </td>
-            </tr>;
+          {users.map((user, index) => {
+            return (
+              <tr key={user._id || index}>
+                <td>{++index}</td>
+                <td>{user.email}</td>
+                <td>{user.name}</td>
+                <td>{user.role}</td>
+                <td>
+                  <button className="btn btn-primary">Edit &nbsp;</button>
+                  <button className="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+            );
           })}
         </tbody>
       </table>
